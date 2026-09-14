@@ -1,0 +1,88 @@
+:root {
+  --ff-primary: #E85D04;
+  --ff-primary-dark: #C74A02;
+  --ff-dark: #1F2937;
+  --ff-bg: #F7F7F9;
+}
+
+body {
+  background-color: var(--ff-bg);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.login-body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--ff-primary) 0%, var(--ff-dark) 100%);
+}
+
+.login-card {
+  width: 380px;
+  border: none;
+  border-radius: 16px;
+}
+
+.brand-badge {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--ff-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.sidebar {
+  width: 230px;
+  min-height: 100vh;
+  background: var(--ff-dark);
+}
+
+.sidebar .nav-link {
+  color: #cbd5e1;
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+
+.sidebar .nav-link.active,
+.sidebar .nav-link:hover {
+  background: var(--ff-primary);
+  color: #fff;
+}
+
+.content-area {
+  min-height: 100vh;
+}
+
+.btn-primary {
+  background-color: var(--ff-primary);
+  border-color: var(--ff-primary);
+}
+.btn-primary:hover {
+  background-color: var(--ff-primary-dark);
+  border-color: var(--ff-primary-dark);
+}
+
+.mesa-card {
+  border-radius: 14px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: transform .15s ease;
+}
+.mesa-card:hover { transform: translateY(-3px); }
+.mesa-libre { background: linear-gradient(135deg, #22c55e, #16a34a); }
+.mesa-ocupada { background: linear-gradient(135deg, #ef4444, #b91c1c); }
+
+.menu-item-card {
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+.badge-estado-pendiente { background: #f59e0b; }
+.badge-estado-en_preparacion { background: #3b82f6; }
+.badge-estado-listo { background: #10b981; }
+.badge-estado-entregado { background: #6366f1; }
+.badge-estado-pagado { background: #64748b; }
